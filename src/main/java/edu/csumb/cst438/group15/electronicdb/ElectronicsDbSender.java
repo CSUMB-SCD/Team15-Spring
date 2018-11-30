@@ -25,11 +25,11 @@ public class ElectronicsDbSender implements CommandLineRunner{
         160, "airpods.jpg");
         ProductInfo pi3 = new ProductInfo(3, 10, "MacBook Air", "  ", 2500, "mac-air.jpg");
         
-        ProductInfo pi4 = new ProductInfo(4, 10, "iPad", "  ", 2500, "mac-air.jpg");
-        ProductInfo pi5 = new ProductInfo(5, 10, "Apple Watch", "  ", 2500, "mac-air.jpg");
-        ProductInfo pi6 = new ProductInfo(6, 10, "4K Apple TV", "  ", 2500, "mac-air.jpg");
-        ProductInfo pi7 = new ProductInfo(7, 10, "Ryze Tello Edu Drone", "  ", 2500, "mac-air.jpg");
-        ProductInfo pi8 = new ProductInfo(8, 10, "Beats Studio3 Headphones", "  ", 2500, "mac-air.jpg");
+        ProductInfo pi4 = new ProductInfo(4, 10, "iPad Pro", "  ", 2500, "ipad-pro.png");
+        ProductInfo pi5 = new ProductInfo(5, 10, "Apple Watch", "  ", 2500, "watch.jpg");
+        ProductInfo pi6 = new ProductInfo(6, 10, "4K Apple TV", "  ", 2500, "appletv.jpg");
+        ProductInfo pi7 = new ProductInfo(7, 10, "Ryze Tello Edu Drone", "  ", 2500, "drone.jpg");
+        ProductInfo pi8 = new ProductInfo(8, 10, "Beats Studio3 Headphones", "  ", 2500, "beats.jpg");
 
         //delete db data
         productInfoRepo.deleteAll();
