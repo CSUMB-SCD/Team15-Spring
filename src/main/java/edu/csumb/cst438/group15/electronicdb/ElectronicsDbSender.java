@@ -17,8 +17,8 @@ public class ElectronicsDbSender implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
-        ProductInfo pi1 = new ProductInfo(1,10,"MacBook Pro","The newest fastest MacBook out now.", 2500);
-        ProductInfo pi2 = new ProductInfo(2,10,"Ear Pods","Reliable blah blah", 180);
+        ProductInfo pi1 = new ProductInfo(1,10,"MacBook Pro","The newest fastest MacBook out now.", 2500, "macbook.png");
+        ProductInfo pi2 = new ProductInfo(2,10,"Ear Pods","Reliable blah blah", 180, "airpods.jpeg");
        
         
         //delete db data
