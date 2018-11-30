@@ -17,8 +17,14 @@ public class ElectronicsDbSender implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
-        ProductInfo pi1 = new ProductInfo(1,10,"MacBook Pro","The newest fastest MacBook out now.", 2500, "macbook.png");
-        ProductInfo pi2 = new ProductInfo(2,10,"Ear Pods","Reliable blah blah", 180, "airpods.jpeg");
+        ProductInfo pi1 = new ProductInfo(1,10,"MacBook Pro",
+        "The newest fastest MacBook out now. It is not only compact, but also more powerful than ever
+        before. It delivers up to 20% more faster performance with the new Intel Core m3, along with
+        i5 and i7 processor. It also has a 10 hour battery life, with a 12 inch retina display and best of
+        all weighs only 2 lbs!", 2500, "macbook.png");
+
+        ProductInfo pi2 = new ProductInfo(2,10,"AirPods",
+        "Reliable blah blah", 180, "airpods.jpg");
        
         
         //delete db data
