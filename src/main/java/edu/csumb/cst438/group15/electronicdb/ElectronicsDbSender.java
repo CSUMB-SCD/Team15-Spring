@@ -25,11 +25,17 @@ public class ElectronicsDbSender implements CommandLineRunner{
         160, "airpods.jpg");
         ProductInfo pi3 = new ProductInfo(3, 10, "MacBook Air", "  ", 2500, "mac-air.jpg");
         
+        ProductInfo pi4 = new ProductInfo(4, 10, "iPad", "  ", 2500, "mac-air.jpg");
+        ProductInfo pi5 = new ProductInfo(5, 10, "Apple Watch", "  ", 2500, "mac-air.jpg");
+        ProductInfo pi6 = new ProductInfo(6, 10, "4K Apple TV", "  ", 2500, "mac-air.jpg");
+        ProductInfo pi7 = new ProductInfo(7, 10, "Ryze Tello Edu Drone", "  ", 2500, "mac-air.jpg");
+        ProductInfo pi8 = new ProductInfo(8, 10, "Beats Studio3 Headphones", "  ", 2500, "mac-air.jpg");
+
         //delete db data
         productInfoRepo.deleteAll();
 
         //add db seeds
-        List<ProductInfo> productInfo = Arrays.asList(pi1,pi2,pi3);
+        List<ProductInfo> productInfo = Arrays.asList(pi1,pi2,pi3,pi4,pi5,pi6,pi7,pi8);
 
         productInfoRepo.saveAll(productInfo);
     }
