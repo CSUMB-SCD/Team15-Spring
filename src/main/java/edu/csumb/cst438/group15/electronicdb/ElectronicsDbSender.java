@@ -18,17 +18,18 @@ public class ElectronicsDbSender implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         ProductInfo pi1 = new ProductInfo(1,10,"MacBook Pro",
-        "The newest fastest MacBook out now. It is not only compact, but also more powerful than ever before. It delivers up to 20% more faster performance with the new Intel Core m3, along with i5 and i7 processor. It also has a 10 hour battery life, with a 12 inch retina display and best of all weighs only 2 lbs!", 
+        "The newest fastest MacBook out now. It is not only compact, but also more powerful than ever before. It delivers up to 20% more faster performance with the new Intel Core m3, along with an i5 and i7 processor. It also has a 10 hour battery life, with a 12 inch retina display and best of all weighs only 2 lbs!", 
         2500, "macbook.png");
         ProductInfo pi2 = new ProductInfo(2,10,"AirPods",
-        "Reliable blah blah", 180, "airpods.jpg");
-       
+        "These AirPods change the way you use headphones forever! These instantly turn on and connect to your iPhone, Apple Watch, iPad, or Mac whenever you remove them from the charging case. Any audio also begins to automatically start playing as soon as you put them in your ear and they also pause automatically when you take them out of your ears. You can even To adjust the volume, change the song, make a call, or even get directions by double tapping to activate Siri.", 
+        160, "airpods.jpg");
+        ProductInfo pi3 = new ProductInfo(3, 10, "MacBook Air", "  ", 2500, "mac-air.jpg");
         
         //delete db data
         productInfoRepo.deleteAll();
 
         //add db seeds
-        List<ProductInfo> productInfo = Arrays.asList(pi1,pi2);
+        List<ProductInfo> productInfo = Arrays.asList(pi1,pi2,pi3);
 
         productInfoRepo.saveAll(productInfo);
     }
