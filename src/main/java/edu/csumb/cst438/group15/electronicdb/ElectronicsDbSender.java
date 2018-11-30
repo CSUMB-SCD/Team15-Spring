@@ -23,13 +23,18 @@ public class ElectronicsDbSender implements CommandLineRunner{
         ProductInfo pi2 = new ProductInfo(2,10,"AirPods",
         "These AirPods change the way you use headphones forever! These instantly turn on and connect to your iPhone, Apple Watch, iPad, or Mac whenever you remove them from the charging case. Any audio also begins to automatically start playing as soon as you put them in your ear and they also pause automatically when you take them out of your ears. You can even To adjust the volume, change the song, make a call, or even get directions by double tapping to activate Siri.", 
         160, "airpods.jpg");
-        ProductInfo pi3 = new ProductInfo(3, 10, "MacBook Air", "  ", 2500, "mac-air.jpg");
-        
-        ProductInfo pi4 = new ProductInfo(4, 10, "iPad Pro", "  ", 2500, "ipad-pro.png");
-        ProductInfo pi5 = new ProductInfo(5, 10, "Apple Watch", "  ", 2500, "watch.jpg");
-        ProductInfo pi6 = new ProductInfo(6, 10, "4K Apple TV", "  ", 2500, "appletv.jpg");
-        ProductInfo pi7 = new ProductInfo(7, 10, "Ryze Tello Edu Drone", "  ", 2500, "drone.jpg");
-        ProductInfo pi8 = new ProductInfo(8, 10, "Beats Studio3 Headphones", "  ", 2500, "beats.jpg");
+        ProductInfo pi3 = new ProductInfo(3, 10, "MacBook Air", "The thinnest and lightest MacBook of them all, is now even thinner. It now features a brilliant Retina display, Touch ID, the latest-generation keyboard, and a Force Touch trackpad. The iconic wedge is created from 100 percent recycled aluminum, making it the greenest Mac ever. And with all-day battery life, MacBook Air is your perfectly portable, do-it-all notebook.", 
+        2500, "mac-air.jpg");
+        ProductInfo pi4 = new ProductInfo(4, 10, "iPad Pro", "The iPad Pro is now newly redesigned! It’s all new, all screen, and all powerful. It’s all new, all screen, and all powerful. Completely redesigned and packed with our most advanced technology, it will make you rethink what iPad is capable of. And what a computer is capable of. The new Liquid Retina display goes from edge to edge. True-to-life color and ProMotion technology make everything look gorgeous and feel responsive. You’ve got to see it — and touch it — to believe it.", 
+        800, "ipad-pro.png");
+        ProductInfo pi5 = new ProductInfo(5, 10, "Apple Watch", "This is part of the Watch Series 3. You can stay active, healthy, and connected all at the same time with this watch. You can Monitor your health. Track your workouts. Get the motivation you need to achieve your fitness goals. And stay connected to the people and information you care about. With Apple Watch Series 3, you can do it all — right from your wrist. ", 
+        410, "watch.jpg");
+        ProductInfo pi6 = new ProductInfo(6, 10, "4K Apple TV", " Apple TV 4K lets you watch movies and shows in amazing 4K HDR — and now it completes the picture with immersive sound from Dolby Atmos. It streams your favorite channels live. Has great content from apps like Netflix, Amazon Prime Video, and ESPN.2 And thanks to Siri, you can control it all with just your voice. 4K gives you a crisper picture using four times more pixels than standard HD. High Dynamic Range (HDR) delivers brighter, more realistic colors and greater detail.", 
+        199, "appletv.jpg");
+        ProductInfo pi7 = new ProductInfo(7, 10, "Ryze Tello Edu Drone", " Ryze's Tello Edu drone is an ideal companion for anyone engaged in STEAM-based learning. The drone provides precise and stable flying thanks to DJI’s cutting-edge flight technology. And the Tello Edu app together with Swift Playgrounds help you learn to write code to program the drone. The Tello Edu app has a colorful interface complete with educational features and visual programming. It pairs with your iPhone or iPad to offer complete control of Tello Edu while simplifying its maneuvers.", 
+        130, "drone.jpg");
+        ProductInfo pi8 = new ProductInfo(8, 10, "Beats Studio3 Headphones", "Take off. Beats Studio3 Wireless – Skyline Collection features four luxury colors to elevate every step of your journeys: Midnight Black, Crystal Blue, Desert Sand, and Shadow Gray. Explore the world in style and enjoy a premium listening experience with Pure Adaptive Noise Canceling (Pure ANC), which blocks external noise and preserves the full clarity, range, and emotion of your sound. Up to 22 hours of battery life lets you enjoy nonstop music in comfort even on long flights.", 
+        350, "beats.jpg");
 
         //delete db data
         productInfoRepo.deleteAll();
