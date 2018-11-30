@@ -10,13 +10,16 @@ public class ProductInfo {
     private String description;
     private Integer price;
     private String productName;
+    private String image;
 
-    public ProductInfo (Number id, Integer quantity, String productName, String description, Integer price) {
+
+    public ProductInfo (Number id, Integer quantity, String productName, String description, Integer price, String image) {
         this.id = id;
         this.quantity = quantity;
         this.productName = productName;
         this.description = description;
         this.price = price;
+        this.image = image;
     }
 
     public Integer getQuantity() {
@@ -37,5 +40,9 @@ public class ProductInfo {
 
     public Integer getPrice(){
         return this.price;
+    }
+
+    public String getImage() {
+        return this.image;
     }
 }
