@@ -15,12 +15,18 @@ public class ElectronicsController {
     @Autowired
     IProductInfoRepository productInfoRepository;
 
-
+    //CHANGE URLS TO NON CAMELCASE
     @CrossOrigin(origins = "*") 
     @RequestMapping("/allProductInfo")
     public List<ProductInfo> getAllProductInfo () {
         List<ProductInfo> result = productInfoRepository.findAll();
         return result;
+    }
+
+    @CrossOrigin(origins = "*") 
+    @RequestMapping("/search")
+    public List<ProductInfo> searchProductInfoByName (@RequestParam("product-name") String productName) {
+        return productInfoRepository.getProductInfoByName(productName);
     }
 
 }
