@@ -11,7 +11,7 @@ import edu.csumb.cst438.group15.electronicdb.entities.ProductInfo;
 
 @Repository
 public interface IProductInfoRepository extends MongoRepository<ProductInfo, String>{
-    @Query("{ 'productName': '/MacBook Pro/' }")
+    @Query("{ 'productName': ?0}")
     List<ProductInfo> getProductInfoByName(@Param("name") String name);
 
 }

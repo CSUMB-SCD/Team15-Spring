@@ -15,7 +15,6 @@ public class ElectronicsController {
     @Autowired
     IProductInfoRepository productInfoRepository;
 
-    //CHANGE URLS TO NON CAMELCASE
     @CrossOrigin(origins = "*") 
     @RequestMapping("/allProductInfo")
     public List<ProductInfo> getAllProductInfo () {
